@@ -17,8 +17,8 @@ static int t[VT_DEFAULT_COL_SIZE];
 
 static void sub_d(int p, int s, int x, int y)
 {
-    uint8_t r;
-    uint8_t g;
+    rt_uint8_t r;
+    rt_uint8_t g;
 
     r = (p % 16) * 16;
     g = 180 - p;
