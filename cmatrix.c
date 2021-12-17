@@ -57,13 +57,15 @@ static void cmatrix(int argc, char const *argv[])
     vt_store_screen();
     vt_clearall();
 
+    x = rand();
+
     for (i = 0; i < VT_DEFAULT_COL_SIZE; i++)
     {
-        //t[i] = - random() % 50;
         t[i] = - rand() % 50;
     }
 
-    //sub_d(1,1,10,10);
+    sub_d(1,1,10,10);
+
     while (1)
     {
         for (k = 1; k < VT_DEFAULT_COL_SIZE; k++)
